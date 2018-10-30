@@ -15,7 +15,9 @@ Just run `sudo make install` after running `make build`, don't trust the binary 
 
 # Usage
 
-Just navigate to directory and
+Just navigate to directory and use rhe command `gitqq`. If you also want to push what you've commited please add p as first argument.
+
+Ex: `gitqq p` 
 
 # Interesting Note
 
