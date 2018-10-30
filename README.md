@@ -11,7 +11,7 @@ On this project, I've experimented using go runtime to do some precompilation. B
 
 # Installation
 
-
+Just run `make install` after running `make build`, don't trust the binary in repo. It's better if you build it.
 
 # Usage
 
