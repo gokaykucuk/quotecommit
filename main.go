@@ -27,7 +27,7 @@ func main() {
 	color.Green("Adding and commiting your files with commit message")
 
 	fmt.Println(splitted_message[0])
-	color.New(color.Bold, color.BgCyan).Println(splitted_message[1])
+	color.New(color.Bold, color.BgCyan, color.Italic).Println(splitted_message[1])
 	color.New(color.BlinkSlow,color.FgRed).Println("!!! Please do this as rarely as possible !!!")
 	cmd := exec.Command("git", "commit", "-a", "-m", "quote_placeholder")
 	cmd.Stdout = os.Stdout
