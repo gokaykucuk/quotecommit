@@ -21,18 +21,25 @@ func main() {
 		updateData()
 		return
 	}
+	pushAfterCommit := false
+	if len(os.Args) > 1 &&  os.Args[1] == "p"{
+		pushAfterCommit = true
+	}
 	chosen_message := getRandomQuote()
 	splitted_message := strings.Split(chosen_message, "|")
 	color.Green("Adding and commiting your files with commit message...")
 	fmt.Println(splitted_message[0])
 	fmt.Println(" " + color.New(color.Bold, color.BgCyan, color.Italic).Sprint(splitted_message[1]))
 	// I like how it does warn you..
-	color.New(color.BlinkSlow,color.FgRed).Println("!!! Please do this as rarely as possible !!!")
-	cmd := exec.Command("git", "commit", "-a", "-m", "quote_placeholder")
-	cmd.Stdout = os.Stdout
-	cmd.Stderr = os.Stderr
-	cmd.Env = os.Environ()
+	cmd := exec.Command("git", "commit", "-a", "-m", getRandomQuote())
 	cmd.Run()
+	cmd = exec.Command("git", "push")
+	cmd.Run()
+	if pushAfterCommit{
+
+	}
+
+	color.New(color.BlinkSlow,color.FgRed).Println("!!! Please do this as rarely as possible !!!")
 }
 
 func getRandomQuote() (quote string){
@@ -44,7 +51,8 @@ func getRandomQuote() (quote string){
 
 // Build time function, not so important!
 func updateData(){
-	text, err := ioutil.ReadFile(projectFolder()+"/data/raw_data")
+	// Make this able to process all files in folder
+	text, err := ioutil.ReadFile(projectFolder()+"/data/data.raw")
 	// Process the text so it represents an array
 	scanner := bufio.NewScanner(strings.NewReader(string(text)))
 	var processed_text string
