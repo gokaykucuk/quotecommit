@@ -24,4 +24,4 @@ install:
 uninstall:
 		rm $(INSTALL_PATH)$(BINARY_NAME)
 update_data:
-		$(GO) run main.go update_data
+		$(GOCMD) run main.go update_data

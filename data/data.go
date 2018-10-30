@@ -1,6 +1,6 @@
 package data
 
-var Data = []string{
+var data = []string{
 "As Bill Gates once said, PCs have undoubtedly turned into our silicon experts, swarming almost every part of our cutting edge lives. Therefore, a portion of the best personalities of our time have considered the essentials of PCs and programming in our human life.",
 "Java is to JavaScript what Car is to Carpet.|Chris Heilmann",
 "Lisp isn’t a language, it’s a building material.|Alan Kay",
@@ -40,7 +40,7 @@ var Data = []string{
 "I’m not a great programmer; I’m just a good programmer with great habits.|Kent Beck",
 "It’s not at all important to get it right the first time. It’s vitally important to get it right the last time.|Andrew Hunt and David Thomas",
 "Computer science education cannot make anybody an expert programmer any more than studying brushes and pigment can make somebody an expert painter.|Eric S. Raymond",
-"nbsp;Deleted code is debugged code.|Jeff Sickel",
+"Deleted code is debugged code.|Jeff Sickel",
 "Walking on water and developing software from a specification are easy if both are frozen.|Edward V Berard",
 "Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live.|Martin Golding",
 "Low-level programming is good for the programmer’s soul.|John Carmack",
