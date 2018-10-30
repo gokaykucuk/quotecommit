@@ -19,9 +19,12 @@ clean:
 run:
 		$(GOBUILD) -o $(BINARY_NAME) -v ./...
 		./$(BINARY_NAME)
+update_data:
+        $(GO) run main.go update_deps
 # deps:
 		# $(GOGET) github.com/sirupsen/logrus
 		# $(GOGET) github.com/spf13/cobra
+
 
 
 # Cross compilation
