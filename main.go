@@ -28,11 +28,11 @@ func main() {
 	chosen_message := getRandomQuote()
 	splitted_message := strings.Split(chosen_message, "|")
 	color.Green("Adding and commiting your files with commit message...\n")
+	fmt.Println(splitted_message[0])
+	color.New(color.Bold, color.BgCyan, color.Italic).Println("      " + splitted_message[1]+ "     ")
 	// I like how it does warn you..
 	commit_cmd := exec.Command("git", "commit", "-a", "-m", getRandomQuote())
 	commit_cmd.Run()
-	fmt.Println(splitted_message[0])
-	color.New(color.Bold, color.BgCyan, color.Italic).Println("      " + splitted_message[1]+ "     ")
 	if pushAfterCommit{
 		color.New(color.BgRed).Print("\n! p flag found! Also pushing...\n")
 		push_cmd := exec.Command("git", "push")
