@@ -37,7 +37,7 @@ func main() {
 		color.New(color.FgYellow).Println("! p flag found! Also pushing...")
 		push_cmd := exec.Command("git", "push")
 		push_cmd.Run()
-		color.New(color.FgYellow, color.Bold).Println("Done!")
+		color.New(color.FgYellow, color.Bold).Print("Done!")
 	}
 	color.New(color.BlinkSlow,color.FgRed).Println("!!! Please do this as rarely as possible !!!")
 }
