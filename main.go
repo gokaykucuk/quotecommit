@@ -35,7 +35,7 @@ func main() {
 	commit_cmd := exec.Command("git", "commit", "-a", "-m", getRandomQuote())
 	commit_cmd.Run()
 	if pushAfterCommit{
-		color.New(color.BgRed).Print("\n! p flag found! Also pushing...\n")
+		color.New(color.FgRed).Print("\n! p flag found! Also pushing...\n")
 		push_cmd := exec.Command("git", "push")
 		push_cmd.Run()
 		color.New(color.FgYellow, color.Bold).Print("Done!")
