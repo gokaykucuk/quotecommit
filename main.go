@@ -21,8 +21,13 @@ func main() {
 		updateData()
 		return
 	}
-	commit_message := getRandomQuote()
-	color.Green("Adding and commiting your files with commit message : " + commit_message)
+	chosen_message := getRandomQuote()
+	splitted_message := strings.Split(chosen_message, "|")
+
+
+	color.Green("Adding and commiting your files with commit message")
+	color.Red(splitted_message[0])
+	color.New(color.FgRed, color.Bold).Println(splitted_message[1])
 	cmd := exec.Command("git", "commit", "-a", "-m", "quote_placeholder")
 	cmd.Stdout = os.Stdout
 	cmd.Stderr = os.Stderr
