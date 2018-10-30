@@ -30,7 +30,6 @@ func main() {
 	color.Green("Adding and commiting your files with commit message...\n")
 	fmt.Println(splitted_message[0])
 	color.New(color.Bold, color.BgCyan, color.Italic).Println("      " + splitted_message[1]+ "   ")
-	fmt.Println()
 	// I like how it does warn you..
 	commit_cmd := exec.Command("git", "commit", "-a", "-m", getRandomQuote())
 	commit_cmd.Run()
