@@ -128,7 +128,8 @@ If Java had true garbage collection, most programs would delete themselves upon 
 Many people tend to look at programming styles and languages like religions: if you belong to one, you cannot belong to others. But this analogy is another fallacy.|Niklaus Wirth
 Beware of bugs in the above code; I have only proved it correct, not tried it.|Donald E. Knuth.
 Programming went back to the beginning of time. It was a little like the midden out back of his father’s castle.|Vernor Vinge
-On two occasions I have been asked, Pray, Mr. Babbage, if you put into the machine wrong figures, will the right answers come out?|In one case a member of the Upper, and in the other a member of the Lower House put this question. I am not able rightly to apprehend the kind of confusion of ideas that could provoke such a question.|Charles Babbage
+On two occasions I have been asked, Pray, Mr. Babbage, if you put into the machine wrong figures, will the right answers come out?|Unknown
+In one case a member of the Upper, and in the other a member of the Lower House put this question. I am not able rightly to apprehend the kind of confusion of ideas that could provoke such a question.|Charles Babbage
 Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program.|Linus Torvalds
 Sometimes it pays to stay in bed on Monday, rather than spending the rest of the week debugging Monday’s code.|Christopher Thompson
 Some of the best programming is done on paper, really. Putting it into the computer is just a minor detail.|Max Kanat-Alexander
