@@ -30,7 +30,7 @@ func main() {
 	color.Green("Adding and commiting your files with commit message...\n")
 	fmt.Println(splitted_message[0])
 	color.New(color.Bold, color.Italic, color.BgCyan).Println("      " + splitted_message[1]+ "     ")
-	color.New(color.BgWhite).Println(" ")
+
 	// I like how it does warn you..
 	commit_cmd := exec.Command("git", "commit", "-a", "-m", getRandomQuote())
 	commit_cmd.Run()
@@ -40,7 +40,7 @@ func main() {
 		push_cmd.Run()
 		color.New(color.FgYellow, color.Bold).Print("Done!")
 	}
-	color.New(color.BlinkSlow,color.FgRed).Println("!!! Please do this as rarely as possible !!!")
+	color.New(color.BlinkSlow,color.FgRed).Println("\n!!! Please do this as rarely as possible !!!")
 }
 
 func getRandomQuote() (quote string){
