@@ -10,4 +10,8 @@ Anyways, It just puts a random quote about computers into commit message and com
 
 # Usage
 
-Just navigate to directory and 
+Just navigate to directory and
+
+# Interesting Note
+
+My ide, ( Jetbrains ), completely stopped responding to me, so with the commit this note included, i am actually going to use quotecommit to commit. You will see quote_placeholder during this process as commit message until it starts pulling the names. 
