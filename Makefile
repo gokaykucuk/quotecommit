@@ -4,7 +4,7 @@ GOBUILD=$(GOCMD) build
 GOCLEAN=$(GOCMD) clean
 GOTEST=$(GOCMD) test
 GOGET=$(GOCMD) get
-BINARY_NAME=bin/gitqq
+BINARY_NAME=bin/gitqc
 INSTALL_PATH=/usr/local/
 
 all: test build
