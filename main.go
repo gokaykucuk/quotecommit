@@ -28,7 +28,7 @@ func main() {
 
 	fmt.Println(splitted_message[0])
 	color.New(color.Bold).Println(splitted_message[1])
-	color.New(color.BlinkRapid).Println("!!! Please do this as rarely as possible !!!")
+	color.New(color.BlinkSlow,color.FgRed).Println("!!! Please do this as rarely as possible !!!")
 	cmd := exec.Command("git", "commit", "-a", "-m", "quote_placeholder")
 	cmd.Stdout = os.Stdout
 	cmd.Stderr = os.Stderr
