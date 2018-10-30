@@ -31,14 +31,14 @@ func main() {
 	fmt.Println(splitted_message[0])
 	fmt.Println(" " + color.New(color.Bold, color.BgCyan, color.Italic).Sprint(splitted_message[1]))
 	// I like how it does warn you..
-	cmd := exec.Command("git", "commit", "-a", "-m", getRandomQuote())
-	cmd.Run()
-	cmd = exec.Command("git", "push")
-	cmd.Run()
+	commit_cmd := exec.Command("git", "commit", "-a", "-m", getRandomQuote())
+	commit_cmd.Run()
 	if pushAfterCommit{
-
+		color.Green("p flag found! Also pushing...")
+		push_cmd := exec.Command("git", "push")
+		push_cmd.Run()
 	}
-
+	fmt.Print("\n\n\n")
 	color.New(color.BlinkSlow,color.FgRed).Println("!!! Please do this as rarely as possible !!!")
 }
 
