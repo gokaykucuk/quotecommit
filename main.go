@@ -33,9 +33,8 @@ func main() {
 	// I like how it does warn you..
 	commit_cmd := exec.Command("git", "commit", "-a", "-m", getRandomQuote())
 	commit_cmd.Run()
-	color.New().Println()
 	if pushAfterCommit{
-		color.New(color.BgHiBlue).Print("! p flag found! Also pushing...\n")
+		color.New(color.BgRed).Print("! p flag found! Also pushing...\n")
 		push_cmd := exec.Command("git", "push")
 		push_cmd.Run()
 		color.New(color.FgYellow, color.Bold).Println("Done!")
