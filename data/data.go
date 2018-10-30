@@ -1,6 +1,6 @@
 package data
 
-var data = []string{
+var Data = []string{
 "As Bill Gates once said, PCs have undoubtedly turned into our silicon experts, swarming almost every part of our cutting edge lives. Therefore, a portion of the best personalities of our time have considered the essentials of PCs and programming in our human life.",
 "Java is to JavaScript what Car is to Carpet.|Chris Heilmann",
 "Lisp isn’t a language, it’s a building material.|Alan Kay",

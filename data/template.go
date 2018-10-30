@@ -1,5 +1,5 @@
 package data
 
-var raw_data = []string{
+var template_data = []string{
 //+
 }

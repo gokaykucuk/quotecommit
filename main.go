@@ -61,7 +61,7 @@ func updateData(){
 	}
 	go_data_template, err := ioutil.ReadFile(projectFolder()+"/data/template.go")
 	go_data_replaced := strings.Replace(string(go_data_template),"//+",processed_text, -1)
-	go_data_replaced2 := strings.Replace(go_data_replaced,"raw_data","data", -1)
+	go_data_replaced2 := strings.Replace(go_data_replaced,"template_data","Data", -1)
 	err = ioutil.WriteFile(projectFolder()+"/data/data.go", []byte(go_data_replaced2),0)
 	if err != nil{
 		panic(err)
