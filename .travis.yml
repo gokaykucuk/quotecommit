@@ -3,12 +3,5 @@ language: go
 go:
 - 1.8.x
 
-before_install:
-- make ci_deps
-
 script:
 - go test
-- go test -race -coverprofile=coverage.txt -covermode=atomic
-#- go test -v -coverprofile=coverage.out -covermode=count
-
-after_success:
