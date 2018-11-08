@@ -4,4 +4,5 @@ go:
 - 1.8.x
 
 script:
+- make deps
 - go test

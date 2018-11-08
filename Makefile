@@ -10,6 +10,8 @@ INSTALL_PATH=/usr/local/
 all: test build
 build:
 		$(GOBUILD) -o $(BINARY_NAME) -v
+deps:
+		$(GOGET) -u github.com/fatih/color
 test:
 		$(GOTEST) -v ./...
 clean:
